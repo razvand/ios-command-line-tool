@@ -11,6 +11,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BF309B621591FF400A7A2B8 /* fake_header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fake_header.h; sourceTree = "<group>"; };
 		551A88C4208E671F0048DFA0 /* ios-command-line-tool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = "ios-command-line-tool"; sourceTree = BUILT_PRODUCTS_DIR; };
 		551A88C8208E671F0048DFA0 /* ios_command_line_tool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_command_line_tool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -46,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				551A88C8208E671F0048DFA0 /* ios_command_line_tool.m */,
+				1BF309B621591FF400A7A2B8 /* fake_header.h */,
 			);
 			path = "ios-command-line-tool";
 			sourceTree = "<group>";
@@ -163,7 +165,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -215,7 +217,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -225,8 +227,9 @@
 		551A88CE208E671F0048DFA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DEEG7TTSF2;
+				DEVELOPMENT_TEAM = 8JV64D8TCJ;
 				DYLIB_COMPATIBILITY_VERSION = "";
 				DYLIB_CURRENT_VERSION = "";
 				EXECUTABLE_PREFIX = "";
@@ -234,6 +237,7 @@
 				MACH_O_TYPE = mh_execute;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -242,8 +246,9 @@
 		551A88CF208E671F0048DFA0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DEEG7TTSF2;
+				DEVELOPMENT_TEAM = 8JV64D8TCJ;
 				DYLIB_COMPATIBILITY_VERSION = "";
 				DYLIB_CURRENT_VERSION = "";
 				EXECUTABLE_PREFIX = "";
@@ -251,6 +256,7 @@
 				MACH_O_TYPE = mh_execute;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
